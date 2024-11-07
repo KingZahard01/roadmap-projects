@@ -9,31 +9,32 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 400;
+    background-color: #f5f5f5;
 }
 
-.header, .main, .footer {
-    background-color: aqua;
-    width: 830px;
+.page-container {
+    background-color: #fff;
+    max-width: 830px;
     margin: 0 auto;
-    border: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 
 /* Navbar */
-
 .navbar {
-    background-color: #aaa;
+    background-color: #004;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
-.link-hero a {
+.brand-hero a {
     display: flex;
     text-align: center;
     text-decoration: none;
-    color: #000;    
+    color: #fff;    
     gap: 10px; /* espacio entre elementos */
 }
 
@@ -54,47 +55,54 @@ body {
 }
 
 .nav-links a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
 .nav-links a:hover {
-    background-color: #ddd;
+    background-color: #666;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 /* Main content */
-.hero {
-    background-color: #7fffd9;
+.hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 300px;
+    height: 400px;
+    padding: 10px 20px;
 }
 
 /* Columnas */
-.contaier {
+.container {
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid black;
 }
 
 /* projects, experience and education */
 .column {
     flex: 1;
-    background-color: beige;
-    border: 1px solid black;
 }
 
 .column h2 {
-    text-align: center;
+    text-align: left;
     padding: 10px;
+}
+
+.projects, .experience, .education {
+    line-height: 1.5;
+}
+
+.projects {
+    border-right: 1px solid black;
 }
 
 .projects li {
     list-style: none;
-    border: 1px solid black;
     padding: 10px;
 }
 
@@ -103,9 +111,17 @@ body {
     color: #000;
 }
 
+.experience {
+    border-right: 1px solid black;
+}
+
 .experience article{
-    border: 1px solid black;
     padding: 10px;
+}
+
+.experience article a {
+    text-decoration: none;
+    color: #00d;
 }
 
 .education p {  
@@ -117,6 +133,55 @@ body {
 }
 
 /* reviews */
+.reviews {
+    height: 300px;
+    border-top: 1px solid black;
+}
 
+.reviews h2{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.reviews-container { 
+    display: flex;
+    gap : 10px;  
+    justify-content: space-between;
+    padding: 10px;
+/*    flex-direction: column;*/
+}
+
+.reviews-container article {
+    flex : 1;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.reviews-container article p {
+    margin-bottom: 10px;
+}
 
 /* Footer */
+
+.footer-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+
+/* Pantalla chicas */
+/*@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .header, .main, .footer-container {
+        width: 100%;
+    }
+}
+*/

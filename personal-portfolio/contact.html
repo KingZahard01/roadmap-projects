@@ -12,36 +12,56 @@
     <meta property="og:description" content="A personal website to showcase my projects, articles and contact information.">
     <meta property="og:image" content="./images/logo.png">
     <title>Contact</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Navigation Bar Section -->
-    <header>
-        <nav>
-            <img src="./images/logo.png" alt="Logo">
-            <ul>
-                <li><a href="./index.html">Homepage</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./articles.html">Articles</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Main Content Section -->
+    <div class="page-container">
+        <!-- Navigation Bar Section -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="brand-hero">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="Logo of Juan Garcia's Personal Website" class="logo">
+                        <p class="name">Juan Garcia</p>
+                    </a>
+                </div>
 
-    <main>
-        <section>
-            <h1>Contact</h1>
-            <p>This is my contact page.</p>
-            <ul>
-                <li><a href="mailto:3i8j6@example.com">Email</a></li>
-                <li><a href="https://github.com/KingZahard01">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/juangarval/">LinkedIn</a></li>
-            </ul>
-        </section>
-    </main>
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Homepage</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./articles.html">Articles</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="main">
+            <div class="reviews">
+                <h2>Contact</h1>
+                <p>This is my contact page.</p>
+
+                <section class="projects reviews-container">
+                    <article>
+                        <a href="mailto:3i8j6@example.com">Email</a>
+                    </article>
+
+                    <article>
+                        <a href="https://github.com/KingZahard01">Github</a>
+                    </article>
+                    
+                    <article>
+                        <a href="https://www.linkedin.com/in/juangarval/">LinkedIn</a>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer-container">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>

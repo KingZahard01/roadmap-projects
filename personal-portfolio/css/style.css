@@ -15,6 +15,7 @@ body {
 .page-container {
     background-color: #fff;
     max-width: 830px;
+    height: 1300px;
     margin: 0 auto;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -66,6 +67,10 @@ body {
 }
 
 /* Main content */
+main {
+    height: 1140px;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -86,6 +91,7 @@ body {
 /* projects, experience and education */
 .column {
     flex: 1;
+/*    border: 1px solid black;*/
 }
 
 .column h2 {
@@ -97,9 +103,9 @@ body {
     line-height: 1.5;
 }
 
-.projects {
+/*.projects {
     border-right: 1px solid black;
-}
+}*/
 
 .projects li {
     list-style: none;
@@ -111,9 +117,9 @@ body {
     color: #000;
 }
 
-.experience {
+/*.experience {
     border-right: 1px solid black;
-}
+}*/
 
 .experience article{
     padding: 10px;
@@ -135,10 +141,10 @@ body {
 /* reviews */
 .reviews {
     height: 300px;
-    border-top: 1px solid black;
+/*    border-top: 1px solid black;*/
 }
 
-.reviews h2{
+.reviews h2, p{
     padding-left: 10px;
     margin-bottom: 10px;
 }
